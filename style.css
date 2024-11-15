@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
+
+body {
+    font-family: 'Cherry Swash';
+    text-align: center;
+    background-color: #00008B;
+    color: #FFE7BA;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.countdown {
+    background-color: #363636;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+h1 {
+    color: #FFFF00;
+    font-size: 180px;
+    margin : 13rem 0 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+span {
+    display:block;
+    width:80px;
+    height: 80px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+    color: #00FFFF;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.snowflake {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(calc(100vh + 5px));
+    }
+}
